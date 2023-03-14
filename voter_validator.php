@@ -34,7 +34,7 @@
     $voter3 = array('age'=> 18,'has_pvc'=>false, 'ward'=>"");
     $voter4 = array('age'=> 21,'has_pvc'=>true, 'ward'=>"020");
 
-    //lets call our function & pass voter1,voter2 & voter3 details as arguments respectively.
+    //lets call our function & pass voter1,voter2, voter3 $ voter4 details as arguments respectively.
     validateVoter($voter1['age'], $voter1['has_pvc'], $voter1['ward']);// eligible to vote
     validateVoter($voter2['age'], $voter2['has_pvc'], $voter2['ward']);// not eligible to vote
     validateVoter($voter3['age'], $voter3['has_pvc'], $voter3['ward']);// not eligible to vote
