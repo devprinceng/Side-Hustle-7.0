@@ -41,3 +41,4 @@
     validateVoter($voter4['age'], $voter4['has_pvc'], $voter4['ward']);// eligible to vote
 
 ?>
+
