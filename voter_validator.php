@@ -28,7 +28,7 @@
         }
     }
 	
-    //lets create 2 associative arrays to hold voter1, voter2 & voter3 details respectively
+    //lets create 4 associative arrays to hold voter1, voter2 & voter3 details respectively
     $voter1 = array('age'=> 26,'has_pvc'=>true, 'ward'=>"020");
     $voter2 = array('age'=> 14,'has_pvc'=>true, 'ward'=>"010");
     $voter3 = array('age'=> 18,'has_pvc'=>false, 'ward'=>"");
