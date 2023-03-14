@@ -6,10 +6,10 @@
      If all checks out, echo “Voter eligible to vote”. If any fails, echo why it failed.
     */
 
-    //this function accepts voters age,a true or false value for voter_has_pvc and voters ward(numeric string)
+    //this function accepts voters age,a true or false value for voter_has_pvc and voters_ward number
     function validateVoter($voter_age, $voter_has_pvc, $voter_ward){
         //check if all 3 validation conditions passed
-        if ($voter_age >= 18 && $voter_has_pvc && $voter_ward == "020"){
+        if ($voter_age >= 18 && $voter_has_pvc && $voter_ward == 020){
             // all 3 conditions passed
             echo "<br>VOTER ELIGIBLE TO VOTE! <br/><br/>";
         }else{
@@ -22,17 +22,17 @@
             if(!$voter_has_pvc){ //voter has no pvc
                 echo "You don't have a PVC <br/>";
             }
-            if ($voter_ward != "020"){
+            if ($voter_ward != 020){
                 echo "Only Ward 020 voters are eligible to vote here <br/>";
             }
         }
     }
 	
     //lets create 4 associative arrays to hold voter1, voter2 & voter3 details respectively
-    $voter1 = array('age'=> 26,'has_pvc'=>true, 'ward'=>"020");
-    $voter2 = array('age'=> 14,'has_pvc'=>true, 'ward'=>"010");
-    $voter3 = array('age'=> 18,'has_pvc'=>false, 'ward'=>"");
-    $voter4 = array('age'=> 21,'has_pvc'=>true, 'ward'=>"020");
+    $voter1 = array('age'=> 26,'has_pvc'=>true, 'ward'=>020);
+    $voter2 = array('age'=> 14,'has_pvc'=>true, 'ward'=>010);
+    $voter3 = array('age'=> 18,'has_pvc'=>false, 'ward'=>000);
+    $voter4 = array('age'=> 21,'has_pvc'=>true, 'ward'=>020);
 
     //lets call our function & pass voter1,voter2, voter3 $ voter4 details as arguments respectively.
     validateVoter($voter1['age'], $voter1['has_pvc'], $voter1['ward']);// eligible to vote
